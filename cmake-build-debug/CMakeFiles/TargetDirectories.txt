@@ -1,0 +1,3 @@
+/home/fotoblysk/git-projects/Cross-and-circle-game-neural-networks-learn/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/fotoblysk/git-projects/Cross-and-circle-game-neural-networks-learn/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/fotoblysk/git-projects/Cross-and-circle-game-neural-networks-learn/cmake-build-debug/CMakeFiles/Cross_and_circle_game_neural_networks_learn.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++14 -pthread -O3 -DNDEBUG   CMakeFiles/Cross_and_circle_game_neural_networks_learn.dir/main.cpp.o  -o Cross_and_circle_game_neural_networks_learn -lpthread 
