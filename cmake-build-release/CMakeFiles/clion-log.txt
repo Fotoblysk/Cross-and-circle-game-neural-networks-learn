@@ -1,4 +1,4 @@
-/home/fotoblysk/Prog/clion-2016.2.2_2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /home/fotoblysk/git-projects/Cross-and-circle-game-neural-networks-learn
+/home/fotoblysk/Prog/clion-2016.2.2_2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Release -USE_DOUBLE=ON -G "CodeBlocks - Unix Makefiles" /home/fotoblysk/git-projects/Cross-and-circle-game-neural-networks-learn
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/fotoblysk/git-projects/Cross-and-circle-game-neural-networks-learn/cmake-build-release
