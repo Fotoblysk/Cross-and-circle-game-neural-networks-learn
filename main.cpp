@@ -1,3 +1,4 @@
+#define CNN_USE_DOUBLE ON
 #include <iostream>
 #include <array>
 #include <vector>
@@ -14,6 +15,7 @@ double odStatndard(std::vector<vec_t> result, std::vector<vec_t> wannedResult, i
                   + std::pow(std::abs(result[i][1] * 10 - wannedResult[i][1] * 10), pow);
     for (auto i : loss)
         res += loss[i];
+    std::cout << result.size()<< "size of test" <<std::endl;
     res /= loss.size();
     return res;
 }
@@ -21,7 +23,7 @@ double odStatndard(std::vector<vec_t> result, std::vector<vec_t> wannedResult, i
 int loadData2(std::string str, std::vector<vec_t> &data,
               std::vector<vec_t> &movesData, bool ignore = false) {
     std::ifstream file;
-    file.open("/home/fotoblysk/git-projects/Cross-and-circle-game/dupa/" + str);
+    file.open("/home/lukaszk/Desktop/Cross-and-circle-game/cpccc/" + str);
     char trash_buffer;
     char turn = 'O';
     while (file.good()) {
@@ -54,7 +56,7 @@ int loadData2(std::string str, std::vector<vec_t> &data,
 int loadData(std::string str, std::vector<vec_t> &data,
              std::vector<vec_t> &movesData) {
     std::ifstream file;
-    file.open("/home/fotoblysk/git-projects/Cross-and-circle-game/" + str);
+    file.open("/home/lukaszk/Desktop/Cross-and-circle-game/cpccc/" + str);
     char trash_buffer;
     while (file.good()) {
         data.push_back(vec_t(100));
@@ -113,65 +115,123 @@ int main() {
     loadData2("example1_5", data, movesData);
     loadData2("example1_6", data, movesData);
     loadData2("example1_7", data, movesData);
+    loadData2("example1_8", data, movesData);
+    loadData2("example1_9", data, movesData);
+    loadData2("example2_0", data, movesData);
+    loadData2("example2_1", data, movesData);
+    loadData2("example2_2", data, movesData);
+    loadData2("example2_3", data, movesData);
+    loadData2("example2_4", data, movesData);
+    loadData2("example2_5", data, movesData);
+    loadData2("example2_6", data, movesData);
+    loadData2("example2_7", data, movesData);
+    loadData2("example2_8", data, movesData);
+    loadData2("example2_9", data, movesData);
+    loadData2("example3_0", data, movesData);
+    loadData2("example3_1", data, movesData);
+    loadData2("example3_2", data, movesData);
+    loadData2("example3_3", data, movesData);
+    loadData2("example3_4", data, movesData);
+    loadData2("example3_5", data, movesData);
+    loadData2("example3_6", data, movesData);
+    loadData2("example3_7", data, movesData);
+    loadData2("example3_8", data, movesData);
+    loadData2("example3_9", data, movesData);
+    loadData2("example4_0", data, movesData);
+    loadData2("example4_1", data, movesData);
+    loadData2("example4_2", data, movesData);
+    loadData2("example4_3", data, movesData);
+    loadData2("example4_4", data, movesData);
+    loadData2("example4_5", data, movesData);
+    loadData2("example4_6", data, movesData);
+    loadData2("example4_7", data, movesData);
+    loadData2("example4_8", data, movesData);
+    loadData2("example4_9", data, movesData);
+    loadData2("example5_0", data, movesData);
+    loadData2("example5_1", data, movesData);
+    loadData2("example5_2", data, movesData);
+    loadData2("example5_3", data, movesData);
+    loadData2("example5_4", data, movesData);
+    loadData2("example5_5", data, movesData);
+    loadData2("example5_6", data, movesData);
+    loadData2("example5_7", data, movesData);
+    loadData2("example5_8", data, movesData);
+    loadData2("example5_9", data, movesData);
+    loadData2("example6_0", data, movesData);
+    loadData2("example6_1", data, movesData);
+    loadData2("example6_2", data, movesData);
+    loadData2("example6_3", data, movesData);
+    loadData2("example6_4", data, movesData);
+    loadData2("example6_5", data, movesData);
+    loadData2("example6_6", data, movesData);
+    loadData2("example6_7", data, movesData);
+    loadData2("example6_8", data, movesData);
+    loadData2("example6_9", data, movesData);
+    loadData2("example7_0", data, movesData);
+    loadData2("example7_1", data, movesData);
+    loadData2("example7_2", data, movesData);
+    loadData2("example7_3", data, movesData);
+    loadData2("example7_4", data, movesData);
+    loadData2("example7_5", data, movesData);
+    loadData2("example7_6", data, movesData);
+    loadData2("example7_7", data, movesData);
+    loadData2("example7_8", data, movesData);
+    loadData2("example7_9", data, movesData);
+    loadData2("example8_0", data, movesData);
+    loadData2("example8_1", data, movesData);
+    loadData2("example8_2", data, movesData);
+    loadData2("example8_3", data, movesData);
+    loadData2("example8_4", data, movesData);
+    loadData2("example8_5", data, movesData);
+    loadData2("example8_6", data, movesData);
+    loadData2("example8_7", data, movesData);
+    loadData2("example8_8", data, movesData);
+    loadData2("example8_9", data, movesData);
+    loadData2("example9_0", data, movesData);
+    loadData2("example9_1", data, movesData);
+    loadData2("example9_2", data, movesData);
+    loadData2("example9_3", data, movesData);
+    loadData2("example9_4", data, movesData);
+    loadData2("example9_5", data, movesData);
+    loadData2("example9_6", data, movesData);
+    loadData2("example9_7", data, movesData);
+    loadData2("example9_8", data, movesData);
+    loadData2("example9_9", data, movesData);
     std::vector<vec_t> data2;
     std::vector<vec_t> movesData2;
     loadData2("example0_2", data2, movesData2);
-    network<sequential> net;
+    network<sequential> net = make_mlp<activation::tanh>({100, 300, 200, 100, 2});
 //    gradient_descent opt;
     adagrad opt;
-    net
-            << layers::conv(10, 10, 5, 1, 1)
+//    net.load("AI-NN2", content_type::weights_and_model , file_format::json);
+/*    net
+//            << layers::conv(10, 10, 5, 1, 1)
+ //           << activation::tanh()
+            << layers::fc( 100, 1000)//20
             << activation::tanh()
-            //            << layers::conv(6, 6,3,1,1)//4
-            //           << activation::tanh()
-            << layers::fc( 36, 100)//20
+            << layers::fc( 1000, 200)//20
             << activation::tanh()
-            //  << layers::fc(36, 36)
-            //  << activation::tanh()
+            << layers::fc( 200, 100)//20
+            << activation::tanh()
             << layers::fc(100, 2)
             << activation::tanh();
-/*    net
-            << layers::fc(100, 100)
-            << activation::tanh()
-            << layers::fc(100, 100)
-            << activation::tanh()
-            << layers::fc(100, 100)
-            << activation::tanh()
-            << layers::fc(100, 100)
-            << activation::tanh();
             */
-/*    net << layers::conv(10, 10, 5, 1, 1)
-        << activation::tanh()
-        << layers::conv(6, 6, 2, 1, 1)
-        << activation::tanh()
-        << layers::conv(5, 5, 2, 1, 1)
-        << activation::tanh()
-        << layers::conv(4, 4, 2, 1, 1)
-        << activation::tanh()
-        << layers::conv(3, 3, 2, 1, 1)
-        << activation::tanh()
-        << layers::fc(4, 100)
-        << activation::tanh();
-*/
-/*    net << fc(10* 10, 25)
-        << activation::tanh()
-        << layers::fc(25, 100)
-        << activation::tanh();
-        */
-    //     << layers::fc(25, 100)
-//        << activation::tanh();
-//    net << layers::conv(10, 10, 5, 1, 4) << activation::tanh() << max_pooling_layer(6, 6, 4, 2)
-//       << activation::tanh() << layers::fc((6/2) * (6/2) * 4, 100) << activation::tanh();
-
-    size_t epochs = 1000000;
 
     std::vector<vec_t> input_data{data};
     std::vector<vec_t> desired_out{movesData};
-//    size_t batch_size = input_data.size();
-    size_t batch_size = 100;
+
+    size_t batch_size = input_data.size();
+    size_t epochs = 1200;
 
 
-    net.fit<mse>(opt, input_data, desired_out, 10, 100);
+
+
+
+
+
+
+
+
 
     auto result = net.test(data);
 
@@ -184,8 +244,9 @@ int main() {
     double lastProggres = 0;
     timer t;
     auto on_enumerate_epoch = [&]() {
+        
         static int count = 0;
-        if (count % 20 == 0) {
+        if (count % 100 == 0) {
             count = 1;
             auto result = net.test(data);
 
@@ -197,52 +258,16 @@ int main() {
             std::cout << odStatndard(result, movesData,2) << "\n";
             std::cout << odStatndard(result1, movesData2,2) << "\n";
             std::cout << t.elapsed() << "s elapsed. \n";
+            net.save("AI-NN3", content_type::weights_and_model , file_format::json);
             t.restart();
         }
         ++count;
+        
     };
     auto on_enumerate_mb = [&]() {
     };
-
-    while (true) {
+    epochs = 10000;
         net.fit<mse>(opt, input_data, desired_out, batch_size, epochs, on_enumerate_mb, on_enumerate_epoch);
-        //result = net.test(data, movesData);
-        //std::cout << result.accuracy() << std::endl;
-        std::cout << "0 0 0aaaaaaaaaaaaaaaa" << std::endl;
-        //result1 = net.test(data2, movesData2);
-        //std::cout << result1.accuracy() << std::endl;
-        //epochs *= 2;
-//        ++counter;
-/*        if (counter >= 10) {
-            counter = 0;
-            if (result.accuracy() - lastProggres <= 0.0) {
-                std::cout << "size++ = " << ++batch_size << std::endl;
-                std::cout << "rep++ = " << ++epochs << std::endl;
-                counter = -20;
-                lastProggres = 0;
-            }
-        } else if (counter>=0)
-            lastProggres = result.accuracy();
-            */
-    }
-/*
-    epochs = 100 * 16;
-    batch_size = input_data.size() / 10;
-    net.fit<mse>(opt, input_data, desired_out, batch_size, epochs);
-
-    result = net.test(data, movesData);
-    std::cout << result.accuracy() << std::endl;
-    result = net.test(data2, movesData2);
-    std::cout << result.accuracy() << std::endl;
-
-    epochs = 100 * 100;
-    batch_size = input_data.size();
-    net.fit<mse>(opt, input_data, desired_out, batch_size, epochs);
-
-    result = net.test(data, movesData);
-    std::cout << result.accuracy() << std::endl;
-    result = net.test(data2, movesData2);
-    std::cout << result.accuracy() << std::endl;
-*/
+        net.save("AI-NN3", content_type::weights_and_model , file_format::json);
     return 0;
 }

@@ -1,0 +1,440 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d8f3a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d8f3a.dir/build.make CMakeFiles/cmTC_d8f3a.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d8f3a.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_d8f3a.dir/CheckSymbolExists.c.o   -c /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d8f3a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8f3a.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_d8f3a.dir/CheckSymbolExists.c.o  -o cmTC_d8f3a 
+CMakeFiles/cmTC_d8f3a.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d8f3a.dir/build.make:97: recipe for target 'cmTC_d8f3a' failed
+make[1]: *** [cmTC_d8f3a] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d8f3a/fast' failed
+make: *** [cmTC_d8f3a/fast] Error 2
+
+File /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8bb76/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8bb76.dir/build.make CMakeFiles/cmTC_8bb76.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8bb76.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8bb76.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8bb76
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bb76.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_8bb76.dir/CheckFunctionExists.c.o  -o cmTC_8bb76 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8bb76.dir/build.make:97: recipe for target 'cmTC_8bb76' failed
+make[1]: *** [cmTC_8bb76] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8bb76/fast' failed
+make: *** [cmTC_8bb76/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eec9e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eec9e.dir/build.make CMakeFiles/cmTC_eec9e.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eec9e.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_eec9e.dir/CheckSymbolExists.c.o   -c /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_eec9e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eec9e.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_eec9e.dir/CheckSymbolExists.c.o  -o cmTC_eec9e 
+CMakeFiles/cmTC_eec9e.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_eec9e.dir/build.make:97: recipe for target 'cmTC_eec9e' failed
+make[1]: *** [cmTC_eec9e] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_eec9e/fast' failed
+make: *** [cmTC_eec9e/fast] Error 2
+
+File /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0031a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0031a.dir/build.make CMakeFiles/cmTC_0031a.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0031a.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_0031a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0031a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0031a.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_0031a.dir/CheckFunctionExists.c.o  -o cmTC_0031a -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0031a.dir/build.make:97: recipe for target 'cmTC_0031a' failed
+make[1]: *** [cmTC_0031a] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0031a/fast' failed
+make: *** [cmTC_0031a/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2c93f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2c93f.dir/build.make CMakeFiles/cmTC_2c93f.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2c93f.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_2c93f.dir/CheckSymbolExists.c.o   -c /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_2c93f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c93f.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_2c93f.dir/CheckSymbolExists.c.o  -o cmTC_2c93f 
+CMakeFiles/cmTC_2c93f.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2c93f.dir/build.make:97: recipe for target 'cmTC_2c93f' failed
+make[1]: *** [cmTC_2c93f] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2c93f/fast' failed
+make: *** [cmTC_2c93f/fast] Error 2
+
+File /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2567a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2567a.dir/build.make CMakeFiles/cmTC_2567a.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2567a.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2567a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2567a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2567a.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_2567a.dir/CheckFunctionExists.c.o  -o cmTC_2567a -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2567a.dir/build.make:97: recipe for target 'cmTC_2567a' failed
+make[1]: *** [cmTC_2567a] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2567a/fast' failed
+make: *** [cmTC_2567a/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8cbf9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8cbf9.dir/build.make CMakeFiles/cmTC_8cbf9.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8cbf9.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_8cbf9.dir/CheckSymbolExists.c.o   -c /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_8cbf9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cbf9.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_8cbf9.dir/CheckSymbolExists.c.o  -o cmTC_8cbf9 
+CMakeFiles/cmTC_8cbf9.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8cbf9.dir/build.make:97: recipe for target 'cmTC_8cbf9' failed
+make[1]: *** [cmTC_8cbf9] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8cbf9/fast' failed
+make: *** [cmTC_8cbf9/fast] Error 2
+
+File /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4aad8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4aad8.dir/build.make CMakeFiles/cmTC_4aad8.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4aad8.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4aad8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4aad8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4aad8.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_4aad8.dir/CheckFunctionExists.c.o  -o cmTC_4aad8 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4aad8.dir/build.make:97: recipe for target 'cmTC_4aad8' failed
+make[1]: *** [cmTC_4aad8] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4aad8/fast' failed
+make: *** [cmTC_4aad8/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_63e2f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_63e2f.dir/build.make CMakeFiles/cmTC_63e2f.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_63e2f.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_63e2f.dir/CheckSymbolExists.c.o   -c /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_63e2f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63e2f.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_63e2f.dir/CheckSymbolExists.c.o  -o cmTC_63e2f 
+CMakeFiles/cmTC_63e2f.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_63e2f.dir/build.make:97: recipe for target 'cmTC_63e2f' failed
+make[1]: *** [cmTC_63e2f] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_63e2f/fast' failed
+make: *** [cmTC_63e2f/fast] Error 2
+
+File /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2db17/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2db17.dir/build.make CMakeFiles/cmTC_2db17.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2db17.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2db17.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2db17
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2db17.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_2db17.dir/CheckFunctionExists.c.o  -o cmTC_2db17 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2db17.dir/build.make:97: recipe for target 'cmTC_2db17' failed
+make[1]: *** [cmTC_2db17] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2db17/fast' failed
+make: *** [cmTC_2db17/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d79af/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d79af.dir/build.make CMakeFiles/cmTC_d79af.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d79af.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_d79af.dir/CheckSymbolExists.c.o   -c /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d79af
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d79af.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_d79af.dir/CheckSymbolExists.c.o  -o cmTC_d79af 
+CMakeFiles/cmTC_d79af.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d79af.dir/build.make:97: recipe for target 'cmTC_d79af' failed
+make[1]: *** [cmTC_d79af] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d79af/fast' failed
+make: *** [cmTC_d79af/fast] Error 2
+
+File /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f7697/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f7697.dir/build.make CMakeFiles/cmTC_f7697.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f7697.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f7697.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f7697
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7697.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_f7697.dir/CheckFunctionExists.c.o  -o cmTC_f7697 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f7697.dir/build.make:97: recipe for target 'cmTC_f7697' failed
+make[1]: *** [cmTC_f7697] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f7697/fast' failed
+make: *** [cmTC_f7697/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cd536/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cd536.dir/build.make CMakeFiles/cmTC_cd536.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cd536.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_cd536.dir/CheckSymbolExists.c.o   -c /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cd536
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd536.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_cd536.dir/CheckSymbolExists.c.o  -o cmTC_cd536 
+CMakeFiles/cmTC_cd536.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_cd536.dir/build.make:97: recipe for target 'cmTC_cd536' failed
+make[1]: *** [cmTC_cd536] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cd536/fast' failed
+make: *** [cmTC_cd536/fast] Error 2
+
+File /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9691f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9691f.dir/build.make CMakeFiles/cmTC_9691f.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9691f.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_9691f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9691f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9691f.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_9691f.dir/CheckFunctionExists.c.o  -o cmTC_9691f -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9691f.dir/build.make:97: recipe for target 'cmTC_9691f' failed
+make[1]: *** [cmTC_9691f] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9691f/fast' failed
+make: *** [cmTC_9691f/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_377bf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_377bf.dir/build.make CMakeFiles/cmTC_377bf.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_377bf.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_377bf.dir/CheckSymbolExists.c.o   -c /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_377bf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_377bf.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_377bf.dir/CheckSymbolExists.c.o  -o cmTC_377bf 
+CMakeFiles/cmTC_377bf.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_377bf.dir/build.make:97: recipe for target 'cmTC_377bf' failed
+make[1]: *** [cmTC_377bf] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_377bf/fast' failed
+make: *** [cmTC_377bf/fast] Error 2
+
+File /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f8f3e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f8f3e.dir/build.make CMakeFiles/cmTC_f8f3e.dir/build
+make[1]: Entering directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f8f3e.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f8f3e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f8f3e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8f3e.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_f8f3e.dir/CheckFunctionExists.c.o  -o cmTC_f8f3e -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f8f3e.dir/build.make:97: recipe for target 'cmTC_f8f3e' failed
+make[1]: *** [cmTC_f8f3e] Error 1
+make[1]: Leaving directory '/home/lukaszk/Desktop/Cross-and-circle-game-neural-networks-learn/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f8f3e/fast' failed
+make: *** [cmTC_f8f3e/fast] Error 2
+
+
